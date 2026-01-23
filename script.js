@@ -26,4 +26,16 @@
     
   });
   
+  // Handle expandable subsections in Robots section
+  $('.subsection-header').on('click', function() {
+    var $content = $(this).next('.subsection-content');
+    var $header = $(this);
+    
+    // Toggle the content visibility
+    $content.toggleClass('hide');
+    
+    // Toggle the expanded class on the header
+    $header.toggleClass('expanded');
+  });
+  
 })(jQuery);

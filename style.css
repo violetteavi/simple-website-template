@@ -58,9 +58,6 @@ h6 { font-size: 1.4rem; line-height: 1.6;  letter-spacing: 0; }
 p {
   margin: 0 auto 1.5em auto; /* bottom margin for paragraphs */
 }
-p + p {
-
-}
 
 /**
  * Quotes & Blockquotes
@@ -138,6 +135,26 @@ ul.main-menu li a.active {
   height: auto;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+
+/* Robots section subsections */
+.subsection {
+  margin-bottom: 1.5rem;
+}
+.subsection-header {
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  transition: color 0.2s;
+}
+.subsection-header:hover {
+  color: #EF6D3D;
+}
+.subsection-content {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 /* Utility classes */
