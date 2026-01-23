@@ -132,6 +132,14 @@ ul.main-menu li a.active {
   border-bottom-color:#EF6D3D;
 }
 
+/* Art section images */
+#art img {
+  width: 700px;
+  height: auto;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
 /* Utility classes */
 .hide {
   display:none;
