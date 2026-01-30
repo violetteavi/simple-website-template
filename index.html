@@ -28,7 +28,9 @@
   <body>
 
     <header id="header">
-      <img src="logo.jpg">
+      <div class="home-thumbs">
+        <img class="home-thumb" src="profile_pic_cropped.jpg" alt="Carter">
+      </div>
       <h1>Andrew Violette</h1>
       
       <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
@@ -45,50 +47,65 @@
         <div id="content"> 
           
           <div id="home" class="content-region hide">
-            <h2>Home</h2>
-            <p>
-              Welcome! I'm Andrew. I make robots and art. <br>
-              If you want to pay me for robots, you can see my past work <a href="#robots">here</a>.<br>
-              If you want to see some neat art, that's <a href="#art">here</a>. <br>
-              
-            </p>
+            <div class="home-intro">
+              <!img class="profile-pic" src="profile_pic.jpg" alt="Andrew Violette">
+              <div class="home-intro-content">
+                <p>
+                  Welcome! I'm Andrew. I'm a robotics researcher and an artist.
+                </p>
+                <div class="home-thumbs">
+                  <img class="home-thumb" src="robots/carter_cropped.jpg" alt="Carter">
+                  <img class="home-thumb" src="robots/manipulation_experiment_cropped.png" alt="FailureStudy">
+                  <img class="home-thumb" src="art/dragon.jpg" alt="Sculpture">
+                  <img class="home-thumb" src="art/sunset.jpg" alt="Photography">
+                </div>
+                <p>
+                  If you want to hire me as an engineer, see my past <a href="#robots">robots</a>.
+                  While you're here, check out some neat <a href="#art">art!</a>
+                </p>
+              </div>
+            </div>
           </div>
           
           <div id="robots" class="content-region hide">
-            <h2>Robots</h2>
             <p>
-              I have been building robots since 2010. I started getting paid for it in 2017. <br>
-              I've worked on every facet of a robot, from the motor firmware to the world model to the end user interaction.
+              I have been building robots since 2010. I started getting paid for it in 2017.
+              I've worked on every facet of a robot, from the motor firmware to the world model to the end user interaction. Here's a few of the places I've worked, and what I did there.
             </p>
             
             <div class="subsection">
-              <h3 class="subsection-header">Perception</h3>
-              <div class="subsection-content hide">
-                <p>My work with Robust on the world model</p>
-                <p>My work on Kimera</p>
+              <h3 class="subsection-header">Cornell University (Human-Robot Interaction, Control)</h3>
+              <div class="subsection-content hide">  
+                <p>I graduated from Cornell University with a MS degree in computer science. While there, I conducted research on human-robot interaction for autonomous robots.</p>
+                <img class="home-thumb" src="robots/manipulation_experiment_cropped.png" alt="FailureStudy">
+                <p>I fine-tuned a visual-language-action model (Pi0.5) for a pick-and-place task using AWS EC2. Then, I designed a user study to understand which failure modes have the greatest impact on a user's trust in the robot.</p>
+                <img class="home-thumb" src="robots/evacuation_experiment.png" alt="EvacuationStudy">
+                <p>I adapted a mobile robot platform (the Clearpath Jackal) for GPS-denied indoor navigation to act as a guide during evacuation. I designed and ran a user study on how robot behavior impacts user compliance-- if they follow the robot to the exit, or leave the robot to collect their passport.</p>
+                <img class="home-thumb" src="robots/healthcare_robot.png" alt="EmergencyDepartmentStudy">
+                <p>I adapted specification-driven control barrier functions for autonomous navigation of an emergency room. Then, I assisted my colleague Sandhya Jayaraman in conducting a user study on what feedback clinicians want from a robot.</p>
               </div>
             </div>
             
             <div class="subsection">
-              <h3 class="subsection-header">Control</h3>
+              <h3 class="subsection-header">Robust.AI (Perception, Control)</h3>
               <div class="subsection-content hide">
-                <p>My work with the VLA's at Cornell</p>
-                <p>My work on the motor controller firmware at Robust.</p>
+                <img class="home-thumb" src="robots/stretch3_full.png" alt="StretchRobot">
+                <p>I integrated Google's Cartographer into the Stretch robot for 2D localization. I also wrote a design doc and automated testing suite for a tool to synchronize lidar, wheel odometry, and camera timestamps.</p>
+                <img class="home-thumb" src="robots/carter_cropped.jpg" alt="CarterRobot">
+                <p>I wrote the firmware for a mecanum wheel drivetrain, including forward kinematics, wheel odometry from encoders, and serial-to-RS2232 communication. </p>
               </div>
             </div>
             
             <div class="subsection">
-              <h3 class="subsection-header">Human-Robot Interaction</h3>
+              <h3 class="subsection-header">MIT SPARK Lab (Perception)</h3>
               <div class="subsection-content hide">
-                <p>The evacuation robot study</p>
-                <p>The healthcare robot study</p>
-                <p>The recycling robot study</p>
+                <img class="home-thumb" src="robots/reconstruction_cropped.png" alt="FailureStudy">
+                <p>I adapted Kimera, an open source metric-semantic VIO project, to live streams from the Intel d435i. You can see a live demo of real-time metric reconstruction <a href="https://youtu.be/Zjevg5wQTdI?t=768<">here.</a> I also automatically annotated camera feeds using an open source deep neural network.</p>
               </div>
             </div>
           </div>
           
           <div id="art" class="content-region hide">
-            <h2>Art</h2>
             <p>
               My hobby is doing something I have never done before. Often that takes the form of picking up a new artistic skill. Below are some highlights: 
             </p>
@@ -103,7 +120,6 @@
           </div>
           
           <div id="contact" class="content-region hide">
-            <h2>Contact</h2>
             <p>
               Contact me at   v i o l e t t e a v i    at    g m a i l . c o m      (no spaces).<br>
               Always happy to see some cool robots or art!

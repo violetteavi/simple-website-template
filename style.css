@@ -102,6 +102,45 @@ header, #content, footer {
   padding:25px;
   color:#FFFFFF; 
 }
+
+.home-intro {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: 20px;
+}
+.home-intro .profile-pic {
+  width: 200px;
+  height: auto;
+  flex: 0 0 auto;
+}
+.home-intro p {
+  margin: 0;
+}
+
+.home-intro-content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.home-thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.home-thumb {
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .home-intro {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 iframe {
   max-width:100%;
 }
